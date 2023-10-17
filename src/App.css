@@ -1,0 +1,56 @@
+body {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.square {
+    float: left;
+    margin: 0.5rem;
+    border: 2px solid #056724;
+    box-shadow: 0 0 5px #056724;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #000;
+    color: #ffffff;
+    font-size: 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.square:hover, .restart-btn:hover {
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 5px #00ffff;
+}
+
+.game-info {
+    margin: 2rem 0;
+    font-size: 2rem;
+    text-align: center;
+    color: #00ffff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.restart-btn {
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: white;
+    border: 2px solid #056724;
+    box-shadow: 0 0 5px #056724;
+    padding: 16px 105px;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
